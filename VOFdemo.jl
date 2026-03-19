@@ -9,21 +9,16 @@ using InteractiveUtils
 begin
 	using Pkg
 	Pkg.activate(joinpath(@__DIR__))
-	Pkg.add(url="https://github.com/TzuYaoHuang/InterfaceAdvection.jl", rev="demo/VOF")
-	println(@__DIR__)
 	Pkg.instantiate()
 
 	using Plots
 	using Plots.PlotMeasures
 	using EllipsisNotation
 	using LaTeXStrings
-	# using CUDA
+	using CUDA
 	using StaticArrays
-
 	using WaterLily
 	import WaterLily: @loop, inside, apply!, ∂, div
-
-	
 	using InterfaceAdvection
 	import InterfaceAdvection: ϕ, BCf!, cleanWisp!, inside_uWB
 end
@@ -38,7 +33,7 @@ end
 
 # ╔═╡ 2488b501-9399-4b5c-9e80-1c5707a9808c
 begin
-	print("Check if the activated project is correct. Shoould be like \n/PATH/TO/YOUR/DOWNLOAD/InterfaceAdvection.jl/example/Project.toml\nYours:\n")
+	print("Check if the activated project is correct. Shoould be like \n/PATH/TO/YOUR/DOWNLOAD/VOFdemo/Project.toml\nYours:\n")
 	println(Base.ACTIVE_PROJECT[])
 end
 

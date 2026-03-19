@@ -9,3 +9,6 @@ Printf = "de0858da-6303-5e67-8744-51eddeeeb8d7"
 ProgressLogging = "33c8b6b6-d38a-422a-b730-caa89a2f386c"
 StaticArrays = "90137ffa-7385-5640-81b9-e52037218182"
 WaterLily = "ed894a53-35f9-47f1-b17f-85db9237eebd"
+
+[sources]
+InterfaceAdvection = {url="https://github.com/TzuYaoHuang/InterfaceAdvection.jl", rev="demo/VOF"}
