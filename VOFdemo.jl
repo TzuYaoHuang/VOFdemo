@@ -251,18 +251,18 @@ function plotEvolvingVOF(;N=32, geometric=true, dirSplit=true, dilation=true, up
 end
 
 # ╔═╡ 6d32e55a-fb3c-4679-92b7-1b18b4c5ab53
-tArray,anim,fList,dList = plotEvolvingVOF(;N=64, geometric=false, dirSplit=false, dilation=true, upwind=false, CFL=0.25, PREC=Float32, arr=Array);
+tArray,anim,fList,dList = plotEvolvingVOF(;N=128, geometric=false, dirSplit=true, dilation=true, upwind=true, CFL=0.25, PREC=Float32, arr=Array);
 
 # ╔═╡ d9104001-d23a-4bd3-8f30-e8ee98d4c127
-mp4(anim,fps=length(tArray)÷15)
+mp4(anim,fps=length(tArray)÷24)
 
 # ╔═╡ fcaaab61-37d8-40d4-af1c-ec295382ddd1
 plotVolLoss(tArray,fList)
 
 # ╔═╡ Cell order:
-# ╠═df7ea790-040d-11f0-2bc0-63538b86512f
+# ╟─df7ea790-040d-11f0-2bc0-63538b86512f
 # ╟─c3d9659e-c410-42ae-b561-a1f0d6ea875d
-# ╠═2488b501-9399-4b5c-9e80-1c5707a9808c
+# ╟─2488b501-9399-4b5c-9e80-1c5707a9808c
 # ╟─02d24b74-93ae-4ac1-9bf6-1609e93a4aa8
 # ╠═6d32e55a-fb3c-4679-92b7-1b18b4c5ab53
 # ╟─d9104001-d23a-4bd3-8f30-e8ee98d4c127
